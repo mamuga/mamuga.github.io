@@ -1,13 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Martin Muga</title>
-</head>
-<body>
-    Hello I'm Martin Muga
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Martin Muga</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#posts" class="nav-link">Blog</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#books" class="nav-link">Book Shelf</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        
+      </button>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <img
+        src="assets/images/mlepl.jpeg"
+        alt="martin-muga"
+        loading="lazy"
+        class="matt-img"
+      />
+      <div>
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+         Hi, I'm Martin Muga, a full-stack web developer based in London. I have a passion for creating beautiful and functional websites and applications. I enjoy learning new technologies and am always looking to improve my skills.
+        </p>
+      </div>
+    </section>
+
     
-</body>
+
+    <!-- Blog section -->
+    <section class="posts" id="posts">
+      <h2 class="post-header">Top posts from my blog</h2>
+
+        <div class="post-container">
+            <div class="post-card">
+            <img
+                src="assets/images/blog_1.jpg"
+                alt="blog-post-1"
+                loading="lazy"
+                class="post-img"
+            />
+            <div class="post-content">
+                <h3 class="post-title">
+                <a href="https://martinmuga.com/blog/post-1">
+                    How to build a website with React and Node.js
+                </a>
+                </h3>
+                <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quisquam.
+                </p>
+            </div>
+            </div>
+            <div class="post-card">
+            <img
+                src="assets/images/blog_2.jpg"
+                alt="blog-post-2"
+                loading="lazy"
+                class="post-img"
+            />
+            <div class="post-content">
+                <h3 class="post-title">
+                <a href="https://martinmuga.com/blog/post-2">
+                    How to build a website with React and Node.js
+                </a>
+                </h3>
+                <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quisquam.
+                </p>
+            </div>
+            </div>
+            <div class="post-card">
+            <img
+                src="assets/images/blog_3.jpg"
+                alt="blog-post-3"
+                loading="lazy"
+                class="post-img"
+            />
+            <div class="post-content">
+                <h3 class="post-title">
+                <a href="https://martinmuga.com/blog/post-3">
+                    How to build a website with React and Node.js
+                </a>
+                </h3>
+                <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quisquam.
+                </p>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/expenseTracker.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/netflixClone.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/greenyEarth.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Greeny Earth</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Shelf section -->
+    <section class="books" id="books">
+      <h2>Bookshelf</h2>
+        <div class="book-container">
+            <div class="book-card">
+            <img
+                src="assets/images/book_1.jpg"
+                alt="book-1"
+                loading="lazy"
+                class="book-img"
+            />
+            <div class="book-content">
+                <h3 class="book-title">
+                <a href="https://martinmuga.com/books/book-1">
+                    How to build a website with React and Node.js
+                </a>
+                </h3>
+                <p class="book-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quisquam.
+                </p>
+            </div>
+            </div>
+            <div class="book-card">
+            <img
+                src="assets/images/book_2.jpg"
+                alt="book-2"
+                loading="lazy"
+                class="book-img"
+            />
+            <div class="book-content">
+                <h3 class="book-title">
+                <a href="https://martinmuga.com/books/book-2">
+                    How to build a website with React and Node.js
+                </a>
+                </h3>
+                <p class="book-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quisquam.
+                </p>
+            </div>
+            </div>
+            <div class="book-card">
+            <img
+                src="assets/images/book_3.jpg"
+                alt="book-3"
+                loading="lazy"
+                class="book-img"
+            />
+            <div class="book-content">
+                <h3 class="book-title">
+                <a href="https://martinmuga.com/books/book-3">
+                    How to build a website with React and Node.js
+                </a>
+                </h3>
+                <p class="book-details">
+                Lorem
+                </p>
+            </div>
+            </div>
+        </div>
+
+      
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+   
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://twitter.com/_mamuga" target="_blank"
+          >Martin Muga</a
+        >
+      </p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
